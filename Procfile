@@ -1,1 +1,1 @@
-web: java -jar target/eshop-heroku-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT
+web: java -jar target/mystore_heroku-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT
