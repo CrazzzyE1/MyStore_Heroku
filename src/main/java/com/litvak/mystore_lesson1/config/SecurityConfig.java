@@ -24,10 +24,9 @@ import javax.persistence.Basic;
 @EnableAspectJAutoProxy
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true, jsr250Enabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private UserService userService;
+    private final UserService userService;
 
-    @Autowired
-    public void setUserService(UserService userService) {
+    public SecurityConfig(UserService userService) {
         this.userService = userService;
     }
 
